@@ -1,0 +1,25 @@
+/* MentorMatchAI specific styles to fix layout issues */
+.mentor-match-container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+/* Override any problematic global styles */
+#root {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Ensure body displays block for this component */
+body {
+  display: block !important;
+  place-items: initial !important;
+}

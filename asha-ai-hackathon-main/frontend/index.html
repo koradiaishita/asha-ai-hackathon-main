@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HerKey Saarthi AI Assistant</title>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      location="asia-south1"
+      project-id="gen-ai-guru-gdg-pune"
+      agent-id="b2c5e90b-20ef-4b0c-96d1-49537c77a2cf"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat-bubble
+        chat-title="HerKey Saarthi AI Assistant"
+        chat-subtitle="Your AI-Assistant"
+        chat-icon="https://img.icons8.com/fluency/96/chatbot.png"
+        placeholder-text="Ask something about your career..."
+        bot-writing-text="HerKey Saarthi is typing...">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 1000;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        
+        /* Font settings */
+        --df-messenger-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        --df-messenger-font-size: 14px;
+        --df-messenger-font-color: #333; /* --text-dark from your CSS */
+        --df-messenger-chat-border-radius: 20px;
+        /* Chat bubble styling */
+        --df-messenger-chat-bubble-background: linear-gradient(135deg, #8e4777 0%, #9c3f92 100%);
+        --df-messenger-chat-bubble-size: 60px;
+        --df-messenger-chat-bubble-border-radius: 50%;
+        --df-messenger-chat-bubble-icon-color: white;
+        
+        /* Title bar styling */
+        --df-messenger-titlebar-background: linear-gradient(135deg, #8e4777 0%, #9c3f92 100%);
+        --df-messenger-titlebar-font-color: white;
+        --df-messenger-titlebar-title-font-size: 18px;
+        --df-messenger-titlebar-title-font-weight: 600;
+        --df-messenger-titlebar-subtitle-font-size: 14px;
+        --df-messenger-titlebar-subtitle-font-color: rgba(255, 255, 255, 0.9);
+        --df-messenger-titlebar-padding: 18px 15px;
+        
+        /* Chat box styling */
+        --df-messenger-chat-background: #f6f6f6; /* --gray-bg from your CSS */
+        --df-messenger-message-spacing: 15px;
+        --df-messenger-message-border-radius: 18px;
+        
+        /* Bot message styling */
+        --df-messenger-message-bot-background: white;
+        --df-messenger-message-bot-border-radius: 18px 18px 18px 0;
+        --df-messenger-message-bot-font-color: #333; /* --text-dark from your CSS */
+        --df-messenger-message-bot-font-weight: 400;
+        
+        /* User message styling */
+        --df-messenger-message-user-background: #8e4777; /* --primary from your CSS */
+        --df-messenger-message-user-border-radius: 18px 18px 0 18px;
+        --df-messenger-message-user-font-color: white;
+        --df-messenger-message-user-font-weight: 400;
+        
+        /* Input box styling */
+        --df-messenger-input-background: white;
+        --df-messenger-input-border-top: 1px solid #e0e0e0; /* --border-light from your CSS */
+        --df-messenger-input-box-border: 1px solid #e0e0e0;
+        --df-messenger-input-box-border-radius: 25px;
+        --df-messenger-input-box-padding: 12px 15px;
+        --df-messenger-input-box-focus-border: 1px solid #8e4777;
+        --df-messenger-input-font-color: #333;
+        --df-messenger-input-padding: 12px 15px;
+        
+        /* Send icon styling */
+        --df-messenger-send-icon-color: #7ac142; /* --green from your CSS */
+        --df-messenger-send-icon-color-hover: #69b132;
+        --df-messenger-send-icon-color-active: #7ac142;
+        
+        /* Bot writing animation */
+        --df-messenger-message-bot-writing-font-color: #666; /* --text-gray from your CSS */
+        --df-messenger-message-bot-writing-background: white;
+        --df-messenger-message-bot-writing-border-radius: 18px 18px 18px 0;
+
+        /* Chat window dimensions */
+        --df-messenger-chat-window-width: 500px; /* Increased from default 320px */
+        --df-messenger-chat-window-height: 620px; 
+        --df-messenger-chat-scroll-button-font-color: #8e4777; /* --primary from your CSS */ 
+        /* Slightly increased for better proportions */
+        --df-messenger-message-bot-writing-background: #f6f6f6; /* --gray-bg from your CSS */
+      }
+
+      /* Add box shadow to the chat window to match your UI */
+      df-messenger-chat {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        animation: slideIn 0.5s ease-out;
+      }
+
+      /* Animation for chat opening */
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Animation for the chat bubble */
+      df-messenger-chat-bubble:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s;
+      }
+    </style>
+  </body>
+</html>

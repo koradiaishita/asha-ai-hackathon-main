@@ -1,0 +1,273 @@
+/* InterviewReadyAI Page Styles */
+.interview-ready-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f8fa;
+}
+
+/* Sidebar Styles */
+.interview-sidebar {
+  width: 320px;
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e0e6ed;
+}
+
+.sidebar-header h2 {
+  font-size: 1.5rem;
+  color: #2a3f5f;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-header p {
+  color: #667085;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-section h3 {
+  font-size: 1.1rem;
+  color: #2a3f5f;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+.feature-icon {
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.feature-text span {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.feature-text p {
+  font-size: 0.85rem;
+  color: #667085;
+  margin: 0;
+}
+
+.sidebar-cta {
+  margin-top: auto;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.start-button {
+  background-color: #2463eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.start-button:hover {
+  background-color: #1a56db;
+  transform: translateY(-1px);
+}
+
+.sidebar-cta p {
+  font-size: 0.85rem;
+  color: #667085;
+  margin-top: 0.75rem;
+}
+
+.back-link {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.back-link a {
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-link a:hover {
+  color: #2463eb;
+}
+
+/* Main Content Styles */
+.interview-content {
+  flex: 1;
+  padding: 2.5rem 3rem;
+  overflow-y: auto;
+}
+
+.interview-header {
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.interview-header h1 {
+  font-size: 2.25rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.interview-header p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.interview-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.interview-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.interview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.interview-card h3 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.interview-card p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.interview-features {
+  max-width: 800px;
+  margin-bottom: 3.5rem;
+}
+
+.interview-features h2 {
+  font-size: 1.75rem;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.feature-row {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.feature-number {
+  width: 40px;
+  height: 40px;
+  background-color: #2463eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.feature-details h3 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.feature-details p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cta-section {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  max-width: 800px;
+}
+
+.cta-section h2 {
+  font-size: 1.75rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.cta-section p {
+  color: #6b7280;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.primary-button {
+  background-color: #2463eb;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-button:hover {
+  background-color: #1a56db;
+  transform: translateY(-1px);
+}
